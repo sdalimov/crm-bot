@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uz">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -261,18 +261,18 @@ body {
 <!-- CONTACTS -->
 <div class="page active" id="p-contacts">
   <div class="page-header">
-    <div class="page-title">Контакты</div>
+    <div class="page-title">Kontaktlar</div>
     <button class="btn-icon" onclick="openModal('modal-contact')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
     </button>
   </div>
   <div id="sync-contacts" class="sync-badge">
     <span class="sync-dot offline" id="dot-contacts"></span>
-    <span id="sync-label-contacts">Настройте Google Sheets в ⚙️</span>
+    <span id="sync-label-contacts">Google Sheets'ni ⚙️ da sozlang</span>
   </div>
   <div class="search-wrap">
     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input class="search" placeholder="Поиск контактов..." oninput="filterContacts(this.value)" id="search-contacts">
+    <input class="search" placeholder="Kontaktlarni qidirish..." oninput="filterContacts(this.value)" id="search-contacts">
   </div>
   <div id="contacts-list"></div>
 </div>
@@ -280,14 +280,14 @@ body {
 <!-- DEALS -->
 <div class="page" id="p-deals">
   <div class="page-header">
-    <div class="page-title">Сделки</div>
+    <div class="page-title">Bitimlar</div>
     <button class="btn-icon" onclick="openModal('modal-deal')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
     </button>
   </div>
   <div id="sync-deals" class="sync-badge">
     <span class="sync-dot offline" id="dot-deals"></span>
-    <span id="sync-label-deals">Настройте Google Sheets в ⚙️</span>
+    <span id="sync-label-deals">Google Sheets'ni ⚙️ da sozlang</span>
   </div>
   <div id="deals-list"></div>
 </div>
@@ -295,7 +295,7 @@ body {
 <!-- KANBAN -->
 <div class="page" id="p-kanban">
   <div class="page-header">
-    <div class="page-title">Канбан</div>
+    <div class="page-title">Kanban</div>
   </div>
   <div class="kanban" id="kanban-board"></div>
 </div>
@@ -303,14 +303,14 @@ body {
 <!-- TASKS -->
 <div class="page" id="p-tasks">
   <div class="page-header">
-    <div class="page-title">Задачи</div>
+    <div class="page-title">Vazifalar</div>
     <button class="btn-icon" onclick="openModal('modal-task')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
     </button>
   </div>
   <div id="sync-tasks" class="sync-badge">
     <span class="sync-dot offline" id="dot-tasks"></span>
-    <span id="sync-label-tasks">Настройте Google Sheets в ⚙️</span>
+    <span id="sync-label-tasks">Google Sheets'ni ⚙️ da sozlang</span>
   </div>
   <div id="tasks-list"></div>
 </div>
@@ -318,24 +318,24 @@ body {
 <!-- ANALYTICS -->
 <div class="page" id="p-analytics">
   <div class="page-header">
-    <div class="page-title">Аналитика</div>
-    <button class="btn-icon" onclick="loadData(); showToast('Обновлено')">
+    <div class="page-title">Tahlil</div>
+    <button class="btn-icon" onclick="loadData(); showToast('Yangilandi')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
     </button>
   </div>
   <div class="stats" id="stats-row">
-    <div class="stat"><div class="stat-val" id="stat-contacts">0</div><div class="stat-label">Контактов</div></div>
+    <div class="stat"><div class="stat-val" id="stat-contacts">0</div><div class="stat-label">Kontaktlar</div></div>
     <div class="stat"><div class="stat-val" id="stat-deals">0</div><div class="stat-label">Сделок</div></div>
-    <div class="stat"><div class="stat-val" id="stat-tasks">0</div><div class="stat-label">Задач</div></div>
+    <div class="stat"><div class="stat-val" id="stat-tasks">0</div><div class="stat-label">Vazifalar</div></div>
   </div>
 
   <div class="chart-wrap">
-    <div class="chart-title">Воронка продаж</div>
+    <div class="chart-title">Sotuv hunisi</div>
     <div class="funnel" id="funnel-chart"></div>
   </div>
 
   <div class="chart-wrap">
-    <div class="chart-title">Сделки по статусу</div>
+    <div class="chart-title">Bitimlar по статусу</div>
     <div class="bar-chart" id="bar-chart"></div>
   </div>
 </div>
@@ -343,14 +343,14 @@ body {
 <!-- NOTES -->
 <div class="page" id="p-notes">
   <div class="page-header">
-    <div class="page-title">Заметки</div>
+    <div class="page-title">Eslatmalar</div>
     <button class="btn-icon" onclick="openModal('modal-note')">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
     </button>
   </div>
   <div id="sync-notes" class="sync-badge">
     <span class="sync-dot offline" id="dot-notes"></span>
-    <span id="sync-label-notes">Настройте Google Sheets в ⚙️</span>
+    <span id="sync-label-notes">Google Sheets'ni ⚙️ da sozlang</span>
   </div>
   <div id="notes-list"></div>
 </div>
@@ -358,43 +358,43 @@ body {
 <!-- SETTINGS -->
 <div class="page" id="p-settings">
   <div class="page-header">
-    <div class="page-title">Настройки</div>
+    <div class="page-title">Sozlamalar</div>
   </div>
   <div class="settings-section">
     <div class="settings-label">Google Sheets</div>
     <div class="settings-card">
       <div class="settings-row" style="flex-direction:column; align-items:flex-start;">
-        <span style="color:var(--text); font-weight:600; margin-bottom:4px;">URL скрипта (Apps Script)</span>
-        <span>Вставьте URL задеплоенного Web App</span>
+        <span style="color:var(--text); font-weight:600; margin-bottom:4px;">Skript URL manzili (Apps Script)</span>
+        <span>Joylashtirilgan Web App URL manzilini kiriting</span>
         <input class="url-input" id="script-url" placeholder="https://script.google.com/macros/s/..." value="">
       </div>
     </div>
-    <button class="btn btn-primary" style="margin-top:12px; border-radius:var(--radius-sm);" onclick="saveSettings()">Сохранить и проверить</button>
+    <button class="btn btn-primary" style="margin-top:12px; border-radius:var(--radius-sm);" onclick="saveSettings()">Saqlash va tekshirish</button>
   </div>
   <div class="settings-section">
-    <div class="settings-label">Данные</div>
+    <div class="settings-label">Ma'lumotlar</div>
     <div class="settings-card">
       <div class="settings-row" style="cursor:pointer;" onclick="loadDemoData()">
         <div>
-          <div style="font-weight:500;">Загрузить демо-данные</div>
-          <span>Заполнить примерами для теста</span>
+          <div style="font-weight:500;">Demo ma'lumotlarni yuklash</div>
+          <span>Sinov uchun namunalar bilan to'ldirish</span>
         </div>
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:16px;height:16px;color:var(--muted)"><path d="M9 18l6-6-6-6"/></svg>
       </div>
       <div class="settings-row" style="cursor:pointer;" onclick="clearAll()">
         <div>
-          <div style="font-weight:500; color:var(--red);">Очистить все данные</div>
-          <span>Удалить локальные данные</span>
+          <div style="font-weight:500; color:var(--red);">Barcha ma'lumotlarni tozalash</div>
+          <span>Mahalliy ma'lumotlarni o'chirish</span>
         </div>
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:16px;height:16px;color:var(--muted)"><path d="M9 18l6-6-6-6"/></svg>
       </div>
     </div>
   </div>
   <div class="settings-section">
-    <div class="settings-label">О приложении</div>
+    <div class="settings-label">Ilova haqida</div>
     <div class="settings-card">
-      <div class="settings-row"><div>Версия</div><span>1.0.0</span></div>
-      <div class="settings-row"><div>Синхронизация</div><span id="sync-status-text">Не настроена</span></div>
+      <div class="settings-row"><div>Versiya</div><span>1.0.0</span></div>
+      <div class="settings-row"><div>Sinxronizatsiya</div><span id="sync-status-text">Sozlanmagan</span></div>
     </div>
   </div>
 </div>
@@ -403,31 +403,31 @@ body {
 <nav class="nav">
   <button class="nav-btn active" onclick="goPage('contacts',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-    Контакты
+    Kontaktlar
   </button>
   <button class="nav-btn" onclick="goPage('deals',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg>
-    Сделки
+    Bitimlar
   </button>
   <button class="nav-btn" onclick="goPage('kanban',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="5" height="18" rx="1"/><rect x="10" y="3" width="5" height="12" rx="1"/><rect x="17" y="3" width="5" height="15" rx="1"/></svg>
-    Канбан
+    Kanban
   </button>
   <button class="nav-btn" onclick="goPage('tasks',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-    Задачи
+    Vazifalar
   </button>
   <button class="nav-btn" onclick="goPage('analytics',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-    Аналитика
+    Tahlil
   </button>
   <button class="nav-btn" onclick="goPage('notes',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-    Заметки
+    Eslatmalar
   </button>
   <button class="nav-btn" onclick="goPage('settings',this)">
     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-    Настройки
+    Sozlamalar
   </button>
 </nav>
 
@@ -437,15 +437,15 @@ body {
 <div class="overlay" id="modal-contact" onclick="closeOnBg(event,'modal-contact')">
   <div class="modal">
     <div class="modal-handle"></div>
-    <div class="modal-title">Новый контакт</div>
-    <div class="field"><label>Имя*</label><input id="c-name" placeholder="Иван Иванов"></div>
-    <div class="field"><label>Телефон</label><input id="c-phone" type="tel" placeholder="+7 900 000 0000"></div>
-    <div class="field"><label>Email</label><input id="c-email" type="email" placeholder="ivan@example.com"></div>
-    <div class="field"><label>Компания</label><input id="c-company" placeholder="ООО Пример"></div>
-    <div class="field"><label>Теги</label><input id="c-tag" placeholder="Клиент, VIP, ..."></div>
+    <div class="modal-title">Yangi kontakt</div>
+    <div class="field"><label>Ism*</label><input id="c-name" placeholder="Asilbek Karimov"></div>
+    <div class="field"><label>Telefon</label><input id="c-phone" type="tel" placeholder="+998 90 000 0000"></div>
+    <div class="field"><label>Email</label><input id="c-email" type="email" placeholder="asilbek@example.com"></div>
+    <div class="field"><label>Kompaniya</label><input id="c-company" placeholder="Namuna MChJ"></div>
+    <div class="field"><label>Teglar</label><input id="c-tag" placeholder="Mijoz, VIP, ..."></div>
     <div class="btn-row">
-      <button class="btn btn-ghost" onclick="closeModal('modal-contact')">Отмена</button>
-      <button class="btn btn-primary" onclick="addContact()">Добавить</button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-contact')">Bekor qilish</button>
+      <button class="btn btn-primary" onclick="addContact()">Qo'shish</button>
     </div>
   </div>
 </div>
@@ -454,24 +454,24 @@ body {
 <div class="overlay" id="modal-deal" onclick="closeOnBg(event,'modal-deal')">
   <div class="modal">
     <div class="modal-handle"></div>
-    <div class="modal-title">Новая сделка</div>
-    <div class="field"><label>Название*</label><input id="d-name" placeholder="Внедрение CRM"></div>
-    <div class="field"><label>Контакт</label><input id="d-contact" placeholder="Иван Иванов"></div>
-    <div class="field"><label>Сумма (₽)</label><input id="d-amount" type="number" placeholder="150000"></div>
-    <div class="field"><label>Этап</label>
+    <div class="modal-title">Yangi bitim</div>
+    <div class="field"><label>Nomi*</label><input id="d-name" placeholder="CRM joriy etish"></div>
+    <div class="field"><label>Kontakt</label><input id="d-contact" placeholder="Asilbek Karimov"></div>
+    <div class="field"><label>Summa (so'm)</label><input id="d-amount" type="number" placeholder="1500000"></div>
+    <div class="field"><label>Bosqich</label>
       <select id="d-stage">
-        <option value="new">Новый</option>
-        <option value="contact">Контакт установлен</option>
-        <option value="proposal">Коммерческое предложение</option>
-        <option value="negotiation">Переговоры</option>
-        <option value="won">Выиграно</option>
-        <option value="lost">Потеряно</option>
+        <option value="new">Yangi</option>
+        <option value="contact">Kontakt установлен</option>
+        <option value="proposal">Tijorat taklifi</option>
+        <option value="negotiation">Muzokaralar</option>
+        <option value="won">Yutildi</option>
+        <option value="lost">Yo'qotildi</option>
       </select>
     </div>
-    <div class="field"><label>Заметка</label><textarea id="d-note" placeholder="Детали сделки..."></textarea></div>
+    <div class="field"><label>Izoh</label><textarea id="d-note" placeholder="Bitim tafsilotlari..."></textarea></div>
     <div class="btn-row">
-      <button class="btn btn-ghost" onclick="closeModal('modal-deal')">Отмена</button>
-      <button class="btn btn-primary" onclick="addDeal()">Добавить</button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-deal')">Bekor qilish</button>
+      <button class="btn btn-primary" onclick="addDeal()">Qo'shish</button>
     </div>
   </div>
 </div>
@@ -480,21 +480,21 @@ body {
 <div class="overlay" id="modal-task" onclick="closeOnBg(event,'modal-task')">
   <div class="modal">
     <div class="modal-handle"></div>
-    <div class="modal-title">Новая задача</div>
-    <div class="field"><label>Задача*</label><input id="t-name" placeholder="Позвонить клиенту"></div>
-    <div class="field"><label>Связанный контакт</label><input id="t-contact" placeholder="Иван Иванов"></div>
-    <div class="field"><label>Тип</label>
+    <div class="modal-title">Yangi vazifa</div>
+    <div class="field"><label>Vazifalarа*</label><input id="t-name" placeholder="Mijozga qo'ng'iroq qilish"></div>
+    <div class="field"><label>Bog'liq kontakt</label><input id="t-contact" placeholder="Asilbek Karimov"></div>
+    <div class="field"><label>Turi</label>
       <select id="t-type">
-        <option value="call">Звонок</option>
-        <option value="meeting">Встреча</option>
-        <option value="follow-up">Follow-up</option>
-        <option value="other">Другое</option>
+        <option value="call">Qo'ng'iroq</option>
+        <option value="meeting">Uchrashuv</option>
+        <option value="follow-up">Kuzatuv</option>
+        <option value="other">Boshqa</option>
       </select>
     </div>
-    <div class="field"><label>Дата</label><input id="t-date" type="date"></div>
+    <div class="field"><label>Sana</label><input id="t-date" type="date"></div>
     <div class="btn-row">
-      <button class="btn btn-ghost" onclick="closeModal('modal-task')">Отмена</button>
-      <button class="btn btn-primary" onclick="addTask()">Добавить</button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-task')">Bekor qilish</button>
+      <button class="btn btn-primary" onclick="addTask()">Qo'shish</button>
     </div>
   </div>
 </div>
@@ -503,12 +503,12 @@ body {
 <div class="overlay" id="modal-note" onclick="closeOnBg(event,'modal-note')">
   <div class="modal">
     <div class="modal-handle"></div>
-    <div class="modal-title">Новая заметка</div>
-    <div class="field"><label>Заметка*</label><textarea id="n-text" placeholder="Запишите важное..." style="min-height:120px"></textarea></div>
-    <div class="field"><label>Тег</label><input id="n-tag" placeholder="Встреча, Идея..."></div>
+    <div class="modal-title">Yangi eslatma</div>
+    <div class="field"><label>Izoh*</label><textarea id="n-text" placeholder="Muhim narsalarni yozing..." style="min-height:120px"></textarea></div>
+    <div class="field"><label>Teg</label><input id="n-tag" placeholder="Uchrashuv, Идея..."></div>
     <div class="btn-row">
-      <button class="btn btn-ghost" onclick="closeModal('modal-note')">Отмена</button>
-      <button class="btn btn-primary" onclick="addNote()">Сохранить</button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-note')">Bekor qilish</button>
+      <button class="btn btn-primary" onclick="addNote()">Saqlash</button>
     </div>
   </div>
 </div>
@@ -556,10 +556,10 @@ function updateSyncBadge(sheet, connected) {
   if (!dot || !label) return;
   if (connected) {
     dot.classList.remove('offline');
-    label.textContent = 'Синхронизировано с Google Sheets';
+    label.textContent = 'Google Sheets bilan sinxronlashdi';
   } else {
     dot.classList.add('offline');
-    label.textContent = DB.scriptUrl ? 'Ошибка соединения' : 'Настройте Google Sheets в ⚙️';
+    label.textContent = DB.scriptUrl ? 'Ulanish xatosi' : 'Google Sheets'ni ⚙️ da sozlang';
   }
 }
 
@@ -607,7 +607,7 @@ function getCurrentPage() {
 function renderContacts(list) {
   const el = document.getElementById('contacts-list');
   if (!list.length) {
-    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><p>Нет контактов. Добавьте первый!</p></div>`;
+    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><p>Kontaktlar yo'q. Birinchisini qo'shing!</p></div>`;
     return;
   }
   el.innerHTML = list.map((c, i) => `
@@ -638,7 +638,7 @@ function contactDetail(i) {
 
 async function addContact() {
   const name = document.getElementById('c-name').value.trim();
-  if (!name) { showToast('Введите имя'); return; }
+  if (!name) { showToast('Ism kiriting'); return; }
   const c = {
     id: Date.now(),
     name,
@@ -655,17 +655,17 @@ async function addContact() {
   renderContacts(DB.contacts);
   const ok = await syncToSheets('add', 'contacts', c);
   updateSyncBadge('contacts', ok);
-  showToast('Контакт добавлен');
+  showToast('Kontakt добавлен');
 }
 
 // ============ DEALS ============
-const stageLabel = { new:'Новый', contact:'Контакт', proposal:'КП', negotiation:'Переговоры', won:'Выиграно', lost:'Потеряно' };
+const stageLabel = { new:'Yangi', contact:'Kontakt', proposal:'Taklif', negotiation:'Muzokaralar', won:'Yutildi', lost:'Yo'qotildi' };
 const stageTag = { new:'tag-new', contact:'tag-in-progress', proposal:'tag-in-progress', negotiation:'tag-in-progress', won:'tag-done', lost:'tag-lost' };
 
 function renderDeals(list) {
   const el = document.getElementById('deals-list');
   if (!list.length) {
-    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg><p>Нет сделок. Добавьте первую!</p></div>`;
+    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg><p>Bitimlar yo'q. Birinchisini qo'shing!</p></div>`;
     return;
   }
   el.innerHTML = list.map((d, i) => `
@@ -682,7 +682,7 @@ function renderDeals(list) {
 
 async function addDeal() {
   const name = document.getElementById('d-name').value.trim();
-  if (!name) { showToast('Введите название'); return; }
+  if (!name) { showToast('Nom kiriting'); return; }
   const d = {
     id: Date.now(),
     name,
@@ -699,17 +699,17 @@ async function addDeal() {
   renderDeals(DB.deals);
   const ok = await syncToSheets('add', 'deals', d);
   updateSyncBadge('deals', ok);
-  showToast('Сделка добавлена');
+  showToast('Bitim qo\'shildi');
 }
 
 // ============ KANBAN ============
 const stages = [
-  { key:'new', label:'Новый', color:'#60a5fa' },
-  { key:'contact', label:'Контакт', color:'#a78bfa' },
-  { key:'proposal', label:'КП', color:'#fbbf24' },
-  { key:'negotiation', label:'Переговоры', color:'#fb923c' },
-  { key:'won', label:'Выиграно', color:'#34d399' },
-  { key:'lost', label:'Потеряно', color:'#f87171' }
+  { key:'new', label:'Yangi', color:'#60a5fa' },
+  { key:'contact', label:'Kontakt', color:'#a78bfa' },
+  { key:'proposal', label:'Taklif', color:'#fbbf24' },
+  { key:'negotiation', label:'Muzokaralar', color:'#fb923c' },
+  { key:'won', label:'Yutildi', color:'#34d399' },
+  { key:'lost', label:'Yo'qotildi', color:'#f87171' }
 ];
 
 function renderKanban() {
@@ -729,7 +729,7 @@ function renderKanban() {
             ${c.amount ? `<div class="kol-card-val">₽ ${Number(c.amount).toLocaleString('ru')}</div>` : ''}
             ${c.contact ? `<div class="kol-card-contact">👤 ${c.contact}</div>` : ''}
           </div>
-        `).join('') : `<div style="font-size:12px;color:var(--muted);padding:8px 0;">Пусто</div>`}
+        `).join('') : `<div style="font-size:12px;color:var(--muted);padding:8px 0;">Bo'sh</div>`}
       </div>
     `;
   }).join('');
@@ -737,12 +737,12 @@ function renderKanban() {
 
 // ============ TASKS ============
 const taskTypeTag = { call:'tag-call', meeting:'tag-meeting', 'follow-up':'tag-follow-up', other:'tag-new' };
-const taskTypeLabel = { call:'Звонок', meeting:'Встреча', 'follow-up':'Follow-up', other:'Другое' };
+const taskTypeLabel = { call:'Qo'ng'iroq', meeting:'Uchrashuv', 'follow-up':'Kuzatuv', other:'Boshqa' };
 
 function renderTasks(list) {
   const el = document.getElementById('tasks-list');
   if (!list.length) {
-    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><p>Нет задач. Отлично!</p></div>`;
+    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><p>Vazifalar yo'q. Ajoyib!</p></div>`;
     return;
   }
   el.innerHTML = list.map((t, i) => `
@@ -774,7 +774,7 @@ function toggleTask(i) {
 
 async function addTask() {
   const name = document.getElementById('t-name').value.trim();
-  if (!name) { showToast('Введите задачу'); return; }
+  if (!name) { showToast('Vazifa kiriting'); return; }
   const t = {
     id: Date.now(),
     name,
@@ -791,7 +791,7 @@ async function addTask() {
   renderTasks(DB.tasks);
   const ok = await syncToSheets('add', 'tasks', t);
   updateSyncBadge('tasks', ok);
-  showToast('Задача добавлена');
+  showToast('Vazifalarа добавлена');
 }
 
 // ============ ANALYTICS ============
@@ -831,14 +831,14 @@ function renderAnalytics() {
       <div class="bar-track"><div class="bar-fill" style="width:${(v/maxAmt*100).toFixed(0)}%"></div></div>
       <div class="bar-val">${v >= 1000 ? (v/1000).toFixed(0)+'k' : v}</div>
     </div>
-  `).join('') || '<div style="color:var(--muted);font-size:13px;">Добавьте сделки с суммами</div>';
+  `).join('') || '<div style="color:var(--muted);font-size:13px;">Summali bitimlar qo'shing</div>';
 }
 
 // ============ NOTES ============
 function renderNotes(list) {
   const el = document.getElementById('notes-list');
   if (!list.length) {
-    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><p>Заметок нет. Запишите что-нибудь!</p></div>`;
+    el.innerHTML = `<div class="empty"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><p>Eslatmalar yo'q. Biror narsa yozing!</p></div>`;
     return;
   }
   el.innerHTML = list.map((n, i) => `
@@ -847,10 +847,10 @@ function renderNotes(list) {
       <div class="note-meta">
         <div>
           ${n.tag ? `<span class="tag tag-new">${n.tag}</span>` : ''}
-          <span style="margin-left:6px;">${new Date(n.created).toLocaleDateString('ru')}</span>
+          <span style="margin-left:6px;">${new Date(n.created).toLocaleDateString('uz')}</span>
         </div>
         <div class="note-actions">
-          <button class="note-del" onclick="deleteNote(${i})">Удалить</button>
+          <button class="note-del" onclick="deleteNote(${i})">O'chirish</button>
         </div>
       </div>
     </div>
@@ -859,7 +859,7 @@ function renderNotes(list) {
 
 async function addNote() {
   const text = document.getElementById('n-text').value.trim();
-  if (!text) { showToast('Введите заметку'); return; }
+  if (!text) { showToast('Eslatma kiriting'); return; }
   const n = {
     id: Date.now(),
     text,
@@ -873,11 +873,11 @@ async function addNote() {
   renderNotes(DB.notes);
   const ok = await syncToSheets('add', 'notes', n);
   updateSyncBadge('notes', ok);
-  showToast('Заметка сохранена');
+  showToast('Izoh сохранена');
 }
 
 function deleteNote(i) {
-  if (!confirm('Удалить заметку?')) return;
+  if (!confirm('Eslatmani o\'chirasizmi?')) return;
   DB.notes.splice(i, 1);
   save();
   renderNotes(DB.notes);
@@ -887,43 +887,43 @@ function deleteNote(i) {
 function saveSettings() {
   DB.scriptUrl = document.getElementById('script-url').value.trim();
   save();
-  document.getElementById('sync-status-text').textContent = DB.scriptUrl ? 'Активна' : 'Не настроена';
-  showToast('Сохранено! Загружаю данные...');
+  document.getElementById('sync-status-text').textContent = DB.scriptUrl ? 'Faol' : 'Sozlanmagan';
+  showToast('Saqlandi! Ma\'lumotlar yuklanmoqda...');
   if (DB.scriptUrl) loadData();
 }
 
 function loadDemoData() {
   DB.contacts = [
-    { id:1, name:'Алексей Петров', phone:'+7 900 111 2233', email:'alex@example.com', company:'ООО Старт', tag:'VIP', created: new Date().toISOString() },
-    { id:2, name:'Мария Сидорова', phone:'+7 900 444 5566', email:'maria@corp.ru', company:'АО Технологии', tag:'Клиент', created: new Date().toISOString() },
-    { id:3, name:'Дмитрий Козлов', phone:'+7 900 777 8899', company:'ИП Козлов', created: new Date().toISOString() }
+    { id:1, name:'Asilbek Karimov', phone:'+998 90 111 2233', email:'asilbek@example.com', company:'Start MChJ', tag:'VIP', created: new Date().toISOString() },
+    { id:2, name:'Malika Yusupova', phone:'+998 90 444 5566', email:'malika@corp.uz', company:'Texnologiya AJ', tag:'Mijoz', created: new Date().toISOString() },
+    { id:3, name:'Dilshod Rahimov', phone:'+998 90 777 8899', company:'Rahimov YT', created: new Date().toISOString() }
   ];
   DB.deals = [
-    { id:1, name:'Внедрение CRM', contact:'Алексей Петров', amount:250000, stage:'negotiation', created: new Date().toISOString() },
-    { id:2, name:'Годовой контракт', contact:'Мария Сидорова', amount:480000, stage:'proposal', created: new Date().toISOString() },
-    { id:3, name:'Консультация', contact:'Дмитрий Козлов', amount:45000, stage:'won', created: new Date().toISOString() },
-    { id:4, name:'Техподдержка', contact:'Алексей Петров', amount:120000, stage:'new', created: new Date().toISOString() }
+    { id:1, name:'CRM joriy etish', contact:'Asilbek Karimov', amount:250000, stage:'negotiation', created: new Date().toISOString() },
+    { id:2, name:'Yillik shartnoma', contact:'Malika Yusupova', amount:480000, stage:'proposal', created: new Date().toISOString() },
+    { id:3, name:'Maslahat', contact:'Dilshod Rahimov', amount:45000, stage:'won', created: new Date().toISOString() },
+    { id:4, name:'Texnik yordam', contact:'Asilbek Karimov', amount:120000, stage:'new', created: new Date().toISOString() }
   ];
   DB.tasks = [
-    { id:1, name:'Позвонить Алексею', contact:'Алексей Петров', type:'call', date:'2025-01-20', done:false, created: new Date().toISOString() },
-    { id:2, name:'Отправить КП Марии', contact:'Мария Сидорова', type:'follow-up', date:'2025-01-21', done:false, created: new Date().toISOString() },
-    { id:3, name:'Встреча в офисе', contact:'Дмитрий Козлов', type:'meeting', date:'2025-01-22', done:true, created: new Date().toISOString() }
+    { id:1, name:'Asilbekga qo\'ng\'iroq', contact:'Asilbek Karimov', type:'call', date:'2025-01-20', done:false, created: new Date().toISOString() },
+    { id:2, name:'Malikaga taklif yuborish', contact:'Malika Yusupova', type:'follow-up', date:'2025-01-21', done:false, created: new Date().toISOString() },
+    { id:3, name:'Uchrashuv в офисе', contact:'Dilshod Rahimov', type:'meeting', date:'2025-01-22', done:true, created: new Date().toISOString() }
   ];
   DB.notes = [
-    { id:1, text:'Алексей просил перезвонить после 15:00. Интересуется расширенным пакетом.', tag:'Важно', created: new Date().toISOString() },
-    { id:2, text:'Нужно подготовить презентацию по новым тарифам к следующей неделе.', tag:'Задача', created: new Date().toISOString() }
+    { id:1, text:'Asilbek soat 15:00 dan keyin qayta qo\'ng\'iroq qilishni so\'radi. Kengaytirilgan paket bilan qiziqadi.', tag:'Muhim', created: new Date().toISOString() },
+    { id:2, text:'Keyingi haftaga yangi tariflar bo\'yicha taqdimot tayyorlash kerak.', tag:'Vazifalarа', created: new Date().toISOString() }
   ];
   save();
   renderPage(getCurrentPage());
-  showToast('Демо-данные загружены!');
+  showToast('Demo ma\'lumotlar yuklandi!');
 }
 
 function clearAll() {
-  if (!confirm('Удалить все данные?')) return;
+  if (!confirm('Barcha ma\'lumotlarni o\'chirasizmi?')) return;
   DB.contacts = []; DB.deals = []; DB.tasks = []; DB.notes = [];
   save();
   renderPage(getCurrentPage());
-  showToast('Данные удалены');
+  showToast('Ma'lumotlar удалены');
 }
 
 // ============ UTILS ============
