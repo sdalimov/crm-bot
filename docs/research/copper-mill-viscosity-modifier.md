@@ -4,6 +4,8 @@
 
 **Дата:** 30.09.2026
 
+**Методика лабораторных испытаний и экономический калькулятор:** [copper-mill-viscosity-modifier-lab-methodology.md](copper-mill-viscosity-modifier-lab-methodology.md), [mv-cu-lab-economics.xlsx](mv-cu-lab-economics.xlsx)
+
 ---
 
 ## 1. Короткий ответ
